@@ -76,6 +76,8 @@ jobs:
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
+          echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+          echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
           EOF
 
           #
